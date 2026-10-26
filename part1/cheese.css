@@ -1,1 +1,56 @@
-/* Part 1 - Cheese website styles */
+/* Chan Myae Han 
+https://github.com/DarciHan/CSE134B-HW3.git */
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: #a66a3f;
+    line-height: 1.6;
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+blockquote {
+    border: 2px solid #a66a3f;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.latin {
+    font-style: italic;
+}
+
+#warning {
+    background-color: yellow;
+}
+
+#warning {
+    background-color:lightblue;
+}
+/* Both rules have the same selector and specificity.
+   The later background-color value wins because
+   it appears later in the stylesheet. It wins because of a rule called 
+   Source Order (or Order of Appearance). Browsers read and parse HTML 
+   and CSS files sequentially from top to bottom. When two rules conflict,
+    the browser's default behavior is to let the final instruction it 
+    reads overwrite any previous ones for that exact same property.  */
+
+a:hover {
+    color: yellow;
+}
+
+a:focus,
+input:focus,
+button:focus {
+    outline: 3px solid cyan;
+}
